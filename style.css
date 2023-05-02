@@ -229,14 +229,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
 }
 
 .button-wrapper {
-    /* display: inline-block; */
-    /* align-items: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,20 +239,14 @@ body {
     width: 30px;
 }
 
+.button-wrapper > a {
+    z-index: 100;
+}
+
 .round-button {
   width: 30px;
-  /* border: none; */
-  /* padding: 15px 30px; */
-  /* text-align: center; */
-  /* text-decoration: none; */
-  /* display: inline-block; */
-  /* margin: 4px 2px; */
-  /* cursor: pointer; */
-  /* border-radius: 50%; */
 }
 
 .button-label {
-  /* display: block;  */
-  /* margin-top: 5px; */
   color: white;
 }
