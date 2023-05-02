@@ -18,16 +18,6 @@ function displayTime() {
   
 setInterval(displayTime1, 1000);
 
-// const temperature = data.main.temp;
-// fetch('https://api.openweathermap.org/data/2.5/weather?q=Брно&appid=a134a253d1f330a8fa7218a6473f93bc')
-//   .then(response => response.json()) // Преобразование ответа в JSON-формат
-//   .then(data => {
-//     // Обработка данных о погоде
-//     console.log(data);
-//   })
-//   .catch(error => console.error(error)); // Обработка ошибок
-//   console.log(`temperature: ${temperature}°C`);
-
 function drawGraph(temp) {
 
   const canvas = document.getElementById("graph");
@@ -151,3 +141,31 @@ function updateTimeTemp() {
 }
 
 updateTimeTemp();
+
+
+
+const popup = document.querySelector('.popup');
+const popupContent = document.querySelector('.popup-content');
+const closeBtn = document.querySelector('.close-btn');
+
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("ipadress").innerHTML = data.ip;
+  })
+  .catch(error => console.error('Error fetching IP address:', error));
+
+function openPopup() {
+  popup.style.visibility = 'visible';
+}
+
+function closePopup() {
+  popup.style.visibility = 'hidden';
+}
+
+closeBtn.addEventListener('click', closePopup);
+
+popupContent.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+
