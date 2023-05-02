@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="phone-frame">
+        <div class="phone-screen">    
+            <div class="phone-infoline">
+                <img class="battery" src="images/battery.png" alt="">
+                <img class="wifi" src="images/internet.png" alt="">
+                <img class="signal" src="images/signal.png" alt="">
+                <span class="clock" id="clock"></span>
+                <span class="temp" id="temperature"></span>
+                <div class="imageContainer">
+                    <div class="roman">#<br>x<br>x</div>
+                    <div class="overlay"></div>
+                </div>
+                <!-- <div class="button-menu button-menu1"></div> -->
+                <svg class="button-menu button-menu1" height="24" width="24">
+                    <circle class="bg" r="12" cx="12" cy="12" />
+                    <path class="line line1" d="M 6,8 H 18" />
+                    <path class="line line2" d="M 6,12 H 18" />
+                    <path class="line line3" d="M 6,16 H 18" />
+                </svg>
+                <div class="menu" onclick="document.querySelector('.phone-screen').classList.remove('active')">
+                    <div class="option" id="TicTacToe">
+                        <div class="roman">Tic<br><br>Tac<br><br>Toe</div>
+                    </div>
+                    <div class="option">
+                        <div class="roman">Hosomaki</div>
+                    </div>
+                    <div class="option">
+                        <div class="roman">Tempura</div>
+                    </div>
+                    
+                </div> 
+            </div>
+
+            <span class="clock2" id="clock2"></span>  
+
+            <div id="buttons">
+                <div class="button-wrapper">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img class="round-button" src="images/youtube (1).png" alt="pizdec">
+                    </a>
+                    <span class="button-label">YouTube</span>
+                </div>
+                <div class="button-wrapper">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img class="round-button" src="images/icons/gallery.png" alt="pizdec">
+                    </a>
+                    <span class="button-label">gallery</span>
+                </div>
+                <div class="button-wrapper">
+                    <a href="Oprosnik/oprosnik.html">
+                        <img class="round-button" src="images/questionnaire.png" alt="pizdec">
+                    </a>
+                    <span class="button-label">Quest</span>
+                </div>
+                <div class="button-wrapper">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img class="round-button" src="images/growth.png" alt="pizdec">
+                    </a>  
+                    <span class="button-label">Grafs</span>
+                </div>
+                <div class="button-wrapper">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img class="round-button" src="images/growth.png" alt="pizdec">
+                    </a>  
+                    <span class="button-label">Grafs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
