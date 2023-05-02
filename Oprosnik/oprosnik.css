@@ -1,3 +1,11 @@
-.button {
-    width: 50%;
+
+.piska {
+    text-align:center;
+    content: normal;
+}
+h1 {
+    display: inline-flex;
+}
+.zalupa {
+    display:inline-block;
 }

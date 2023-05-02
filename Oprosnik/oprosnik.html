@@ -7,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="oprosnik.css">
     <script src="oprosnik.js" defer></script>
-    <
+
+       
     <title>Document</title>
 </head>
 <tbody>
     
     <h1>Dotazník pro cizí studenti</h1>
-    <form onsubmit="return validateForm()" method="post" action="save-answers.php">
-    <p>1. Měl/a jsi někdy problémy s porozuměním materiálu na přednáškách? </p>
+    <form onsubmit="return validateForm()" action="save-answers.php" method="post">
+       <div class="zalupa"> <p> <label for="name">Name:</label></p>
+		<input required type="text" id="name" name="name"><br><br></p>
+		<p><label for="surname">Surname:</label></p>
+		<input required type="text" id="Surname" name="Surname"><br><br>
+        <p><label for="email">Email:</label></p>
+		<input required type="email" id="email" name="email"><br><br>
+       </div>
+    <div class="piska"><p>1. Měl/a jsi někdy problémy s porozuměním materiálu na přednáškách? </p>
     <input required type="radio" id="q1" value="my-radio-group" name="1">
     <label for="q1">A) Ano, měl(a) jsem </label>
     <input required type="radio" id="q1" value="my-radio-group" name="1">
@@ -85,6 +93,8 @@
     <input required type="radio" id="q10" value="my-radio-group" name="10">
     <label for="q10">C) Nemohu odpovědět.</label>
     <p class="button"><input type="submit" value="Submit"></p>
+    </div> 
+      
     
 </tbody>
 
