@@ -18,7 +18,6 @@
                 <img class="wifi" src="images/internet.png" alt="">
                 <img class="signal" src="images/signal.png" alt="">
                 <span class="clock" id="clock"></span>
-                <span class="temp" id="temperature"></span>
                 <div class="imageContainer">
                     <div class="roman">#<br>x<br>x</div>
                     <div class="overlay"></div>
@@ -44,7 +43,17 @@
                 </div> 
             </div>
 
-            <div>POGODA EBAT</div>
+            <div id="weather">
+                <div id="temperature">12°</div>
+                <img id="weather-img" src="images/cloudy.png" alt="hueva(">
+                <div id="graph-wrapper">
+                    <div class="graphTemp">13°</div><div class="graphTemp">12°</div><div class="graphTemp">11°</div>
+                    <div class="graphTemp">11°</div><div class="graphTemp">14°</div><div class="graphTemp">17°</div>
+                    <canvas id="graph" width="200" height="50"></canvas>
+                    <div class="graphTime">8:00</div><div class="graphTime">9:00</div><div class="graphTime">10:00</div>
+                    <div class="graphTime">11:00</div><div class="graphTime">12:00</div><div class="graphTime">01:00</div>
+                </div>
+            </div>
 
             <span class="clock2" id="clock2"></span>  
 
@@ -74,10 +83,10 @@
                     <span class="button-label">Grafs</span>
                 </div>
                 <div class="button-wrapper">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="round-button" src="images/growth.png" alt="pizdec">
+                    <a href="Weather/weather.html">
+                        <img class="round-button" src="images/cloudy.png" alt="pizdec">
                     </a>  
-                    <span class="button-label">Grafs</span>
+                    <span class="button-label">Weather</span>
                 </div>
             </div>
         </div>

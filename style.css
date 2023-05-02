@@ -209,8 +209,7 @@ body {
 
 }
 .signal{
-    display: row;
-    margin-left: 90px;
+    margin-left: 85px;
     margin-bottom: 5px;
     padding-bottom: 1px;
     width: 6%;
@@ -219,7 +218,7 @@ body {
 .clock2 {
     display: flex; 
      /* margin-left:50px; */
-     margin-top: 100px;
+     margin-top: 30px;
      font-size: 40px; 
      color: rgb(0, 0, 0); 
    font-weight: bold;
@@ -249,4 +248,55 @@ body {
 
 .button-label {
   color: white;
+}
+
+#weather {
+    background-color: rgba(15, 163, 224, 0.5);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 220px;
+    height: 140px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+
+    align-items: center;
+    justify-items: center
+}
+
+#temperature {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    font-size: 25px;
+    /* grid-column: 1; */
+}
+
+#weather-img {
+    grid-column: 3;
+    width: 60px;
+    margin: -15px;
+    /* align-self: flex-end; */
+}
+
+#graph-wrapper {
+    grid-column: 1 / 4;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(6, 36px);
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: center;
+}
+
+#graph-wrapper > div {
+    font-size: 10px;
+}
+
+#graph {
+    grid-column: 1 / 7;
+    grid-row: 2;
 }
