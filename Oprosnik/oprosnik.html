@@ -14,7 +14,7 @@
 <tbody>
     
     <h1>Dotazník pro cizí studenti</h1>
-    <form onsubmit="return validateForm()" action="save-answers.php" method="post">
+    <form onsubmit="validateForm()" method="post">
        <div class="zalupa"> <p> <label for="name">Name:</label></p>
 		<input required type="text" id="name" name="name"><br><br></p>
 		<p><label for="surname">Surname:</label></p>
@@ -23,74 +23,74 @@
 		<input required type="email" id="email" name="email"><br><br>
        </div>
     <div class="piska"><p>1. Měl/a jsi někdy problémy s porozuměním materiálu na přednáškách? </p>
-    <input required type="radio" id="q1" value="my-radio-group" name="1">
+    <input required type="radio" id="q1" value="1" name="1">
     <label for="q1">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q1" value="my-radio-group" name="1">
+    <input required type="radio" id="q1" value="2" name="1">
     <label for="q1">B) Ne, neměl/a jsem </label>
-    <input required  type="radio" id="q1" value="my-radio-group" name="1">
+    <input required  type="radio" id="q1" value="3" name="1">
     <label for="q1">C) Nemohu odpovědět.</label>
     <p>2. Měl/a jsi někdy problémy kvůli kulturním rozdílům?</p>
-    <input required type="radio" id="q2" value="my-radio-group" name="2">
+    <input required type="radio" id="q2" value="1" name="2">
     <label for="q2">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q2" value="my-radio-group" name="2">
+    <input required type="radio" id="q2" value="2" name="2">
     <label for="q2">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q2" value="my-radio-group" name="2">
+    <input required type="radio" id="q2" value="3" name="2">
     <label for="q2">C) Nemohu odpovědět.</label>
     <p>3. Měl/a jsi někdy problémy s sociální adaptací v nové zemi? </p>
-    <input required type="radio" id="q3" value="my-radio-group" name="3">
+    <input required type="radio" id="q3" value="1" name="3">
     <label for="q3">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q3" value="my-radio-group" name="3">
+    <input required type="radio" id="q3" value="2" name="3">
     <label for="q3">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q3" value="my-radio-group" name="3">
+    <input required type="radio" id="q3" value="3" name="3">
     <label for="q3">C) Nemohu odpovědět.</label>
     <p>4. Měl/a jsi nějaké potíže s pronájmem bytu v České republice? </p>
-    <input required type="radio" id="q4" value="my-radio-group" name="4">
+    <input required type="radio" id="q4" value="1" name="4">
     <label for="q4"> Ano, měl(a) jsem </label>
-    <input required type="radio" id="q4" value="my-radio-group" name="4">
+    <input required type="radio" id="q4" value="2" name="4">
     <label for="q4">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q4" value="my-radio-group" name="4">
+    <input required type="radio" id="q4" value="3" name="4">
     <label for="q4">C) Nemohu odpovědět.</label>
     <p>5. Měl/a jsi někdy finanční potíže při pobytu v České republice? </p>
-    <input required type="radio" id="q5" value="my-radio-group" name="5">
+    <input required type="radio" id="q5" value="1" name="5">
     <label for="q5">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q5" value="my-radio-group" name="5">
+    <input required type="radio" id="q5" value="2" name="5">
     <label for="q5">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q5" value="my-radio-group" name="5">
+    <input required type="radio" id="q5" value="3" name="5">
     <label for="q5">C) Nemohu odpovědět.</label>
     <p>6. Měl/a jsi někdy potíže s nalezením práce v České republice? </p>
-    <input required type="radio" id="q6" value="my-radio-group" name="6">
+    <input required type="radio" id="q6" value="1" name="6">
     <label for="q6">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q6" value="my-radio-group" name="6">
+    <input required type="radio" id="q6" value="2" name="6">
     <label for="q6">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q6" value="my-radio-group" name="6">
+    <input required type="radio" id="q6" value="3" name="6">
     <label for="q6">C) Nemohu odpovědět.</label>
     <p>7. Měl/a jsi někdy potíže s získáním zdravotnické pomoci v České republice? </p>
-    <input required type="radio" id="q7" value="my-radio-group" name="7">
+    <input required type="radio" id="q7" value="1" name="7">
     <label for="q7">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q7" value="my-radio-group" name="7">
+    <input required type="radio" id="q7" value="2" name="7">
     <label for="q7">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q7" value="my-radio-group" name="7">
+    <input required type="radio" id="q7" value="3" name="7">
     <label for="q7">C) Nemohu odpovědět.</label>
     <p>8. Měl/a jsi někdy potíže při komunikaci s místními obyvateli? </p>
-    <input required type="radio" id="q8" value="my-radio-group" name="8">
+    <input required type="radio" id="q8" value="1" name="8">
     <label for="q8">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q8" value="my-radio-group" name="8">
+    <input required type="radio" id="q8" value="2" name="8">
     <label for="q8">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q8" value="my-radio-group" name="8">
+    <input required type="radio" id="q8" value="3" name="8">
     <label for="q8">C) Nemohu odpovědět.</label>
     <p>9. Zažil/a jsi nějakou formu diskriminace v České republice?</p>
-    <input required type="radio" id="q9" value="my-radio-group" name="9">
+    <input required type="radio" id="q9" value="1" name="9">
     <label for="q9">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q9" value="my-radio-group" name="9">
+    <input required type="radio" id="q9" value="2" name="9">
     <label for="q9">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q9" value="my-radio-group" name="9">
+    <input required type="radio" id="q9" value="3" name="9">
     <label for="q9">C) Nemohu odpovědět.</label>
     <p>10. Zažil/a jsi potíže s adaptací na akademickou kulturu v České republice?</p>
-    <input required type="radio" id="q10" value="my-radio-group" name="10">
+    <input required type="radio" id="q10" value="1" name="10">
     <label for="q10">A) Ano, měl(a) jsem </label>
-    <input required type="radio" id="q10" value="my-radio-group" name="10">
+    <input required type="radio" id="q10" value="2" name="10">
     <label for="q10">B) Ne, neměl/a jsem </label>
-    <input required type="radio" id="q10" value="my-radio-group" name="10">
+    <input required type="radio" id="q10" value="3" name="10">
     <label for="q10">C) Nemohu odpovědět.</label>
     <p class="button"><input type="submit" value="Submit"></p>
     </div> 

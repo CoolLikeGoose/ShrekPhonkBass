@@ -93,7 +93,8 @@ function updateTimeTemp() {
 
   elements.forEach((element, index) => {
     if (hours+index*3 >= 24) {
-      hours = -index*3;
+      // hours = -index*3;
+      hours -= 24;
     }
     element.innerHTML = (hours+index*3) + ":00";
   });
