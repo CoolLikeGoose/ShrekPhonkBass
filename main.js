@@ -34,8 +34,6 @@ function drawGraph(temp) {
   ctx.lineWidth = 2;
   ctx.font = "15px Arial";
   ctx.fillStyle = "white";
-
-  var r = 8;
   // max y = 12 // min y = 128
   // var y = 128; 
   var x = 17;
@@ -89,13 +87,13 @@ function updateTimeTemp() {
   let hours = parseInt(time.split(' ')[0])+3;
   let elements = document.querySelectorAll(".graphTime");
 
-  if (hours > 24) {
+  if (hours >= 24) {
     hours -= 24;
   }
 
   elements.forEach((element, index) => {
-    if (hours+index*3 > 24) {
-      hours = -index;
+    if (hours+index*3 >= 24) {
+      hours = -index*3;
     }
     element.innerHTML = (hours+index*3) + ":00";
   });
